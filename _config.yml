@@ -1,0 +1,43 @@
+
+
+title: "Stransky Research Website"
+author: "Dr. Jeff Stransky"
+description: "Updates on my research, publications, and more."
+
+# Use the Minimal Mistakes theme
+remote_theme: "mmistakes/minimal-mistakes"
+
+# Plugins needed for Minimal Mistakes to work properly
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-redirect-from
+  - jekyll-toc
+
+
+
+
+# Enable collections for extra pages (CV, research, etc.)
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+
+# Default settings for each page
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "single"
+
+# Permalinks (Optional)
+permalink: /:categories/:title/
+
+# Other settings
+markdown: kramdown
+highlighter: rouge
